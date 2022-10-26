@@ -4,7 +4,6 @@ import com.Product.ProductAPI.model.Product;
 import com.Product.ProductAPI.model.ProductDTO;
 import com.Product.ProductAPI.repository.ProductRepository;
 import org.krysalis.barcode4j.impl.code128.Code128Bean;
-import org.krysalis.barcode4j.impl.upcean.EAN13Bean;
 import org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -37,10 +36,12 @@ public class ProductServiceImp implements ProductService{
 
     @Override
     public Page<Product> getBySkuOrDesignation(String skuOrDesignation, int offset, int pageSize) {
-        if ((repository.getBySkuOrDesignation(skuOrDesignation, PageRequest.of(offset,pageSize))).isEmpty()){
+        Page <Product> product = repository.getBySkuOrDesignation(skuOrDesignation, PageRequest.of(offset,pageSize));
+
+        if (product.isEmpty()){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND,"Product Not Found");
         }else{
-            return repository.getBySkuOrDesignation(skuOrDesignation,PageRequest.of(offset,pageSize));
+            return product;
         }
     }
 
