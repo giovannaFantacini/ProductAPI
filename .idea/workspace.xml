@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d4f7c34-c9cb-4a88-900c-c78921d58629" name="Changes" comment="Implementation of functions for previous app">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/security/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/security/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/security/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/product.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/product.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.Product.ProductAPI.ProductApiApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.Product.ProductAPI.ProductApiApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.Product.ProductAPI.ProductApiApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.Product.ProductAPI.ProductApiApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +98,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/SIDIS_Geova/Products_SIDIS/ProductAPI",
+    "last_opened_file_path": "C:/Users/Giova/OneDrive/Documentos/ISEP/SIDIS/Trabalho1/ReviewAPI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,6 +111,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Giova\OneDrive\Documentos\ISEP\SIDIS\Trabalho1\ProductAPI\src\main\java\com\Product\ProductAPI" />
       <recent name="C:\SIDIS_Geova\Products_SIDIS\ProductAPI\src\main\java\com\Product\ProductAPI" />
       <recent name="C:\Users\Giova\OneDrive\Documentos\ISEP\SIDIS\ProductAPI" />
     </key>
@@ -180,6 +189,10 @@
       <workItem from="1666729340220" duration="3947000" />
       <workItem from="1666769500123" duration="7112000" />
       <workItem from="1666779390727" duration="749000" />
+      <workItem from="1666787166373" duration="2289000" />
+      <workItem from="1666866367516" duration="424000" />
+      <workItem from="1667257005432" duration="1030000" />
+      <workItem from="1667301052262" duration="3821000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of functions for previous app">
       <created>1666778690880</created>
