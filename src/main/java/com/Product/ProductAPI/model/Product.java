@@ -20,8 +20,6 @@ public class Product implements Serializable{
     @Column(nullable = true)
     private String description;
 
-
-
     @Column(nullable = true)
     private String image;
 
@@ -43,12 +41,6 @@ public class Product implements Serializable{
         setImage(image);
     }
 
-
-    /*public Product(String sku, String designation, String description) {
-        this.sku = sku;
-        this.designation = designation;
-        this.description = description;
-    }*/
 
     public String getSku() {
         return sku;
