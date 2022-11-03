@@ -48,25 +48,6 @@ public class ProductBootstrapper implements CommandLineRunner {
             productRepository.save(p9);
         }
 
-        if (productRepository.getBySku("13456789F122")==null) {
-            Product p10 = new Product("13456789F122","banana","amarela x 7","13456789F122_8ac0da2f-b8bd-41bc-bb29-0e4b0505725d");
-            productRepository.save(p10);
-        }
-
-        if (productRepository.getBySku("23456789F121")==null) {
-            Product p11 = new Product("23456789F121","banana","amarela","");
-            productRepository.save(p11);
-        }
-
-        if (productRepository.getBySku("987654321FFF")==null) {
-            Product p12 = new Product("987654321FFF","banana","amarela","");
-            productRepository.save(p12);
-        }
-
-        if (productRepository.getBySku("987654321FF3")==null) {
-            Product p13 = new Product("987654321FF3","banana","amarela","");
-            productRepository.save(p13);
-        }
 
     }
 

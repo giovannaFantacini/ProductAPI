@@ -2,6 +2,7 @@ package com.Product.ProductAPI.services;
 
 import com.Product.ProductAPI.model.Product;
 import com.Product.ProductAPI.model.ProductDTO;
+import com.Product.ProductAPI.repository.Product2Repository;
 import com.Product.ProductAPI.repository.ProductRepository;
 import org.krysalis.barcode4j.impl.code128.Code128Bean;
 import org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider;
@@ -23,6 +24,8 @@ public class ProductServiceImp implements ProductService{
     @Autowired
     private ProductRepository repository;
 
+    @Autowired
+    private Product2Repository producyRepository;
 
     @Override
     public Page<ProductDTO> getCatalog(int offset, int pageSize) {
@@ -32,13 +35,16 @@ public class ProductServiceImp implements ProductService{
     @Override
     public Object getBySku(final String sku) throws IOException, InterruptedException {
         Optional<Product> productOptional = repository.findById(sku);
+        boolean isPresent = productOptional.isPresent();
+        if(!isPresent){
+            return producyRepository.getProduct(sku);
+        }
         return productOptional.get();
     }
 
     @Override
     public Page<Product> getBySkuOrDesignation(String skuOrDesignation, int offset, int pageSize) {
         Page <Product> product = repository.getBySkuOrDesignation(skuOrDesignation, PageRequest.of(offset,pageSize));
-
         if (product.isEmpty()){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND,"Product Not Found");
         }else{

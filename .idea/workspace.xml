@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d4f7c34-c9cb-4a88-900c-c78921d58629" name="Changes" comment="Diagramas">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/repository/Product2Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/product.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/product.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/bootstrapping/ProductBootstrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/bootstrapping/ProductBootstrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/services/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/services/ProductServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ProductAPI-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProductAPI-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.Product.ProductAPI.ProductApiApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.Product.ProductAPI.ProductApiApplicationTests.xml" afterDir="false" />
@@ -192,7 +192,7 @@
       <workItem from="1666866367516" duration="424000" />
       <workItem from="1667257005432" duration="1030000" />
       <workItem from="1667301052262" duration="3821000" />
-      <workItem from="1667514319614" duration="787000" />
+      <workItem from="1667514299409" duration="1265000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of functions for previous app">
       <created>1666778690880</created>
