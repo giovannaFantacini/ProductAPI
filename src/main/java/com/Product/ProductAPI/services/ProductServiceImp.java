@@ -23,6 +23,7 @@ public class ProductServiceImp implements ProductService{
     @Autowired
     private ProductRepository repository;
 
+
     @Override
     public Page<ProductDTO> getCatalog(int offset, int pageSize) {
         return repository.getCatalog(PageRequest.of(offset,pageSize));

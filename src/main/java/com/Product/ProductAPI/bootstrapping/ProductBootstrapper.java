@@ -17,20 +17,6 @@ public class ProductBootstrapper implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        if (productRepository.getBySku("123456789170")==null) {
-            Product p1 = new Product("123456789170","Batata","crua","123456789170_9e18227b-50d9-4fbf-81ac-b6d55e3c9dd7");
-            productRepository.save(p1);
-        }
-
-        if (productRepository.getBySku("123456789F12")==null) {
-            Product p2 = new Product("123456789F12","Batata","frita","123456789F12_bfbd8878-9131-469e-9511-858c2351d425");
-            productRepository.save(p2);
-        }
-
-        if (productRepository.getBySku("12345678F129")==null) {
-            Product p3 = new Product("12345678F129","Batatax2","frita","12345678F129_f3ae7700-2ac6-4271-ae38-d013820f0bb4");
-            productRepository.save(p3);
-        }
 
         if (productRepository.getBySku("12345679F128")==null) {
             Product p4 = new Product("12345679F128","Batata","assada","12345679F128_031e7791-1766-46d5-8d68-82ae57727448");
