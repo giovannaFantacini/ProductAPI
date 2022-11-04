@@ -3,7 +3,6 @@ package com.Product.ProductAPI.repository;
 import com.Product.ProductAPI.model.Product;
 import com.Product.ProductAPI.model.ProductDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.server.ResponseStatusException;
