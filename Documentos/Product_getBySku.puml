@@ -5,8 +5,8 @@ autoactivate on
 autonumber
 
 actor "User" as User
-participant ":ProductAPI" as pro1
-participant ":Product" as pro2
+participant ":Product1" as pro1
+participant ":Product2" as pro2
 
 activate User
 

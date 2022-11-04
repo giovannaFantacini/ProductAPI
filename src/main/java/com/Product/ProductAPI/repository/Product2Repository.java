@@ -41,27 +41,4 @@ public class Product2Repository {
 
     }
 
-    /*public Page<Product> getProductBySkuOrDesignation(String skuOrDesignation, int offset, int pageSize) throws IOException, InterruptedException {
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .GET()
-                .uri(URI.create("http://localhost:8086//products/catalog?offset=" + offset + "&pageSize=" + pageSize))
-                .header(skuOrDesignation, skuOrDesignation)
-                .build();
-
-        HttpResponse response = client.send(request,
-                HttpResponse.BodyHandlers.ofString());
-
-
-        var code = response.statusCode();
-        if(code == 200){
-            ObjectMapper objectMapper = new ObjectMapper();
-            String body = response.body().toString();
-            Page<Product> product = (Page<Product>) objectMapper.readValue(body, ProductDTO.class);
-            return product;
-        }else {
-            throw new ResponseStatusException(HttpStatus.CONFLICT,"This product doesn't exist");
-        }
-
-    }*/
 }

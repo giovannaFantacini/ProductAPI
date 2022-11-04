@@ -25,7 +25,7 @@ public class ProductServiceImp implements ProductService{
     private ProductRepository repository;
 
     @Autowired
-    private Product2Repository producyRepository;
+    private Product2Repository productRepository;
 
     @Override
     public Page<ProductDTO> getCatalog(int offset, int pageSize) {
@@ -37,7 +37,7 @@ public class ProductServiceImp implements ProductService{
         Optional<Product> productOptional = repository.findById(sku);
         boolean isPresent = productOptional.isPresent();
         if(!isPresent){
-            return producyRepository.getProduct(sku);
+            return productRepository.getProduct(sku);
         }
         return productOptional.get();
     }

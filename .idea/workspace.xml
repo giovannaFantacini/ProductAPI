@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d4f7c34-c9cb-4a88-900c-c78921d58629" name="Changes" comment="Diagramas">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/repository/Product2Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentos/Product_create.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentos/Product_create.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentos/Product_getBySku.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentos/Product_getBySku.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/product.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/product.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/bootstrapping/ProductBootstrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/bootstrapping/ProductBootstrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/repository/Product2Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/repository/Product2Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/services/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/services/ProductServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProductAPI-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProductAPI-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.Product.ProductAPI.ProductApiApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.Product.ProductAPI.ProductApiApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.Product.ProductAPI.ProductApiApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.Product.ProductAPI.ProductApiApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +50,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -97,7 +94,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Giova/OneDrive/Documentos/ISEP/SIDIS/Trabalho1/ProductAPI2",
+    "last_opened_file_path": "C:/Users/Giova/OneDrive/Documentos/ISEP/SIDIS/Trabalho1/Vote_SIDIS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -192,7 +189,10 @@
       <workItem from="1666866367516" duration="424000" />
       <workItem from="1667257005432" duration="1030000" />
       <workItem from="1667301052262" duration="3821000" />
-      <workItem from="1667514299409" duration="1265000" />
+      <workItem from="1667514299409" duration="1729000" />
+      <workItem from="1667568147172" duration="1843000" />
+      <workItem from="1667579607906" duration="116000" />
+      <workItem from="1667589717460" duration="936000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of functions for previous app">
       <created>1666778690880</created>
@@ -208,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667513286087</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Diagramas">
+      <created>1667515586816</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667515586816</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
