@@ -29,14 +29,13 @@ public class ProductsController {
     }
 
     @GetMapping("/catalog")
-    public Iterable<ProductDTO> getCatalog(@RequestParam("offset")final int offset, @RequestParam("pageSize")final int pageSize) {
-        return service.getCatalog(offset,pageSize);
+    public Iterable<ProductDTO> getCatalog() throws IOException, InterruptedException {
+        return service.getCatalog();
     }
 
     @GetMapping(value = "/search")
-    public Iterable<Product> getBySkuOrDesignation(@RequestParam("skuOrDesignation") final String skuOrDesignation,@RequestParam("offset") final int offset, @RequestParam("pageSize") final int pageSize) {
-        return service.getBySkuOrDesignation(skuOrDesignation,offset,pageSize);
-
+    public Iterable<Product> getBySkuOrDesignation(@RequestParam("skuOrDesignation") final String skuOrDesignation) throws IOException, InterruptedException {
+        return service.getBySkuOrDesignation(skuOrDesignation);
     }
 
     @PostMapping(value = "/create")

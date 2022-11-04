@@ -2,11 +2,12 @@ package com.Product.ProductAPI.repository;
 
 import com.Product.ProductAPI.model.Product;
 import com.Product.ProductAPI.model.ProductDTO;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+
+import java.util.List;
 
 public interface ProductRepository extends JpaRepository<Product, String> {
 
@@ -14,8 +15,8 @@ public interface ProductRepository extends JpaRepository<Product, String> {
     Product getBySku(@Param("sku") String sku);
 
     @Query("SELECT f FROM Product f where f.designation like %:skuOrDesignation% or f.sku = :skuOrDesignation")
-    Page<Product> getBySkuOrDesignation(@Param("skuOrDesignation") String skuOrDesignation, Pageable pageable);
+    List<Product> getBySkuOrDesignation(@Param("skuOrDesignation") String skuOrDesignation);
 
     @Query("SELECT  f FROM Product f ")
-    Page <ProductDTO> getCatalog(Pageable pageable);
+    List <ProductDTO> getCatalog();
 }

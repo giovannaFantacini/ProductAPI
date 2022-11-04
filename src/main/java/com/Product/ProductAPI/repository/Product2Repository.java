@@ -13,6 +13,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Collections;
 import java.util.List;
 
 @Repository
@@ -22,7 +23,7 @@ public class Product2Repository {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(URI.create("http://localhost:8086/products?sku=" + sku))
+                .uri(URI.create("http://localhost:8087/products?sku=" + sku))
                 .build();
 
         HttpResponse response = client.send(request,
@@ -40,5 +41,51 @@ public class Product2Repository {
         }
 
     }
+
+    public List<Product> getProductBySkuOrDesignation(String skuOrDesignation) throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .GET()
+                .uri(URI.create("http://localhost:8087/products/search?skuOrDesignation="+skuOrDesignation))
+                .build();
+
+        HttpResponse response = client.send(request,
+                HttpResponse.BodyHandlers.ofString());
+
+
+        var code = response.statusCode();
+        ObjectMapper objectMapper = new ObjectMapper();
+        String body = response.body().toString();
+        List<Product> myObjects = objectMapper.readValue(body, objectMapper.getTypeFactory().constructCollectionType(List.class, Product.class));
+        if(myObjects==null){
+            myObjects = Collections.emptyList();
+        }
+        return myObjects;
+
+    }
+
+
+    public List<ProductDTO> getCatalog() throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .GET()
+                .uri(URI.create("http://localhost:8087/products/catalog"))
+                .build();
+
+        HttpResponse response = client.send(request,
+                HttpResponse.BodyHandlers.ofString());
+
+
+        var code = response.statusCode();
+        ObjectMapper objectMapper = new ObjectMapper();
+        String body = response.body().toString();
+        List<ProductDTO> myObjects = objectMapper.readValue(body, objectMapper.getTypeFactory().constructCollectionType(List.class, ProductDTO.class));
+        if(myObjects==null){
+            myObjects = Collections.emptyList();
+        }
+        return myObjects;
+
+    }
+
 
 }
