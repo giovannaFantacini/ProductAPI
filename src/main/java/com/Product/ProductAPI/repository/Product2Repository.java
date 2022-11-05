@@ -63,28 +63,4 @@ public class Product2Repository {
 
     }
 
-
-    public List<ProductDTO> getCatalog() throws IOException, InterruptedException {
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .GET()
-                .uri(URI.create("http://localhost:8087/products/catalog"))
-                .build();
-
-        HttpResponse response = client.send(request,
-                HttpResponse.BodyHandlers.ofString());
-
-
-        var code = response.statusCode();
-        ObjectMapper objectMapper = new ObjectMapper();
-        String body = response.body().toString();
-        List<ProductDTO> myObjects = objectMapper.readValue(body, objectMapper.getTypeFactory().constructCollectionType(List.class, ProductDTO.class));
-        if(myObjects==null){
-            myObjects = Collections.emptyList();
-        }
-        return myObjects;
-
-    }
-
-
 }

@@ -27,8 +27,8 @@ public class ProductServiceImp implements ProductService{
     private Product2Repository productRepository;
 
     @Override
-    public List<ProductDTO> getCatalog() throws IOException, InterruptedException {
-        return Stream.concat(repository.getCatalog().stream(), productRepository.getCatalog().stream()).collect(Collectors.toList());
+    public List<ProductDTO> getCatalog(){
+        return repository.getCatalog();
     }
 
     @Override
@@ -43,7 +43,11 @@ public class ProductServiceImp implements ProductService{
 
     @Override
     public List<Product> getBySkuOrDesignation(String skuOrDesignation) throws IOException, InterruptedException {
-        return Stream.concat(repository.getBySkuOrDesignation(skuOrDesignation).stream(), productRepository.getProductBySkuOrDesignation(skuOrDesignation).stream()).collect(Collectors.toList());
+        List<Product> products = repository.getBySkuOrDesignation(skuOrDesignation);
+        if(products.isEmpty()){
+            return productRepository.getProductBySkuOrDesignation(skuOrDesignation);
+        }else
+            return products;
     }
 
     @Override

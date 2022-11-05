@@ -29,7 +29,7 @@ public class ProductsController {
     }
 
     @GetMapping("/catalog")
-    public Iterable<ProductDTO> getCatalog() throws IOException, InterruptedException {
+    public Iterable<ProductDTO> getCatalog(){
         return service.getCatalog();
     }
 
