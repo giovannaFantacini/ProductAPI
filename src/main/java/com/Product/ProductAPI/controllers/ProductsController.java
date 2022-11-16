@@ -28,6 +28,12 @@ public class ProductsController {
         return ResponseEntity.ok().body(product);
     }
 
+    @GetMapping("/internal")
+    public ResponseEntity<Product> internalGetBySku(@RequestParam("sku") final String sku){
+        final Product product = (Product) service.internalGetBySku(sku);
+        return ResponseEntity.ok().body(product);
+    }
+
     @GetMapping("/catalog")
     public Iterable<ProductDTO> getCatalog(){
         return service.getCatalog();
@@ -36,6 +42,12 @@ public class ProductsController {
     @GetMapping(value = "/search")
     public Iterable<Product> getBySkuOrDesignation(@RequestParam("skuOrDesignation") final String skuOrDesignation) throws IOException, InterruptedException {
         return service.getBySkuOrDesignation(skuOrDesignation);
+    }
+
+    @GetMapping(value = "/internalSearch")
+    public Iterable<Product> internalGetBySkuOrDesignation(@RequestParam("skuOrDesignation") final String skuOrDesignation) {
+        return service.internalGetBySkuOrDesignation(skuOrDesignation);
+
     }
 
     @PostMapping(value = "/create")

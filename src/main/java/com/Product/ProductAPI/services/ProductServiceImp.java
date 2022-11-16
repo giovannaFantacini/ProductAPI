@@ -7,7 +7,9 @@ import com.Product.ProductAPI.repository.ProductRepository;
 import org.krysalis.barcode4j.impl.code128.Code128Bean;
 import org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 
 import java.awt.image.BufferedImage;
@@ -42,6 +44,12 @@ public class ProductServiceImp implements ProductService{
     }
 
     @Override
+    public Object internalGetBySku(final String sku){
+        Optional<Product> productOptional = repository.findById(sku);
+        return productOptional.get();
+    }
+
+    @Override
     public List<Product> getBySkuOrDesignation(String skuOrDesignation) throws IOException, InterruptedException {
         List<Product> products = repository.getBySkuOrDesignation(skuOrDesignation);
         if(products.isEmpty()){
@@ -51,7 +59,18 @@ public class ProductServiceImp implements ProductService{
     }
 
     @Override
-    public Product create(Product pt) throws IOException {
+    public List<Product> internalGetBySkuOrDesignation(String skuOrDesignation) {
+        List <Product> product = repository.getBySkuOrDesignation(skuOrDesignation);
+
+        if (product.isEmpty()){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,"Product Not Found");
+        }else{
+            return product;
+        }
+    }
+
+    @Override
+    public Product create(Product pt){
         return repository.save(pt);
     }
 

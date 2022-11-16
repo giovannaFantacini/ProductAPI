@@ -22,7 +22,7 @@ public class Product2Repository {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(URI.create("http://localhost:8087/products?sku=" + sku))
+                .uri(URI.create("http://localhost:8087/products/internal?sku=" + sku))
                 .build();
 
         HttpResponse response = client.send(request,
@@ -45,7 +45,7 @@ public class Product2Repository {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(URI.create("http://localhost:8087/products/search?skuOrDesignation="+skuOrDesignation))
+                .uri(URI.create("http://localhost:8087/products/internalSearch?skuOrDesignation="+skuOrDesignation))
                 .build();
 
         HttpResponse response = client.send(request,

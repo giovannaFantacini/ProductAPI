@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d4f7c34-c9cb-4a88-900c-c78921d58629" name="Changes" comment="Get objects from other instance">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8d4f7c34-c9cb-4a88-900c-c78921d58629" name="Changes" comment="Correction in catalog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/product.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/product.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/controllers/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/controllers/ProductsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/repository/Product2Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/repository/Product2Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/services/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/services/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Product/ProductAPI/services/ProductServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Giova/OneDrive/Documentos/ISEP/SIDIS/Trabalho1/Vote_SIDIS&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/SIDIS_Geova/Trabalho2Products/Product1_C&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -193,6 +193,12 @@
       <workItem from="1667568147172" duration="1843000" />
       <workItem from="1667579607906" duration="116000" />
       <workItem from="1667589717460" duration="936000" />
+      <workItem from="1667982917544" duration="4514000" />
+      <workItem from="1668185011930" duration="1385000" />
+      <workItem from="1668529097244" duration="926000" />
+      <workItem from="1668531410993" duration="2761000" />
+      <workItem from="1668544424598" duration="30000" />
+      <workItem from="1668586372140" duration="2535000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of functions for previous app">
       <created>1666778690880</created>
@@ -215,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667515586816</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Correction in catalog">
+      <created>1667644472660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667644472660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +248,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementation of functions for previous app" />
     <MESSAGE value="Diagramas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diagramas" />
+    <MESSAGE value="Correction in catalog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction in catalog" />
   </component>
 </project>
